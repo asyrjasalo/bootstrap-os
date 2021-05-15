@@ -10,14 +10,14 @@
     - Kicks off next stage
 
 .EXAMPLE
-    cmd.exe /c start PowerShell.exe -ExecutionPolicy Bypass -Noexit -Command "& {Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://github.com/geekzter/bootstrap-os/blob/master/windows/bootstrap_windows.ps1'))}"
+    cmd.exe /c start PowerShell.exe -ExecutionPolicy Bypass -Noexit -Command "& {Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://github.com/asyrjasalo/bootstrap-os/blob/master/windows/bootstrap_windows.ps1'))}"
 #> 
 param ( 
     [parameter(Mandatory=$false)][switch]$All=$false,
     [parameter(Mandatory=$false)][ValidateSet("Desktop", "Developer", "Minimal", "None")][string[]]$Packages=@("Minimal"),
     [parameter(Mandatory=$false)][bool]$PowerShell=$false,
     [parameter(Mandatory=$false)][bool]$Settings=$true,
-    [parameter(Mandatory=$false)][string]$Repository="https://github.com/geekzter/bootstrap-os"
+    [parameter(Mandatory=$false)][string]$Repository="https://github.com/asyrjasalo/bootstrap-os"
 ) 
 
 # Validation
@@ -64,7 +64,7 @@ if (Get-Command refreshenv -ErrorAction SilentlyContinue) {
 }
 
 # Clone (the rest of) the repository
-$repoDirectory = Join-Path $HOME "Source\GitHub\geekzter"
+$repoDirectory = Join-Path $HOME "Source\GitHub\asyrjasalo"
 if (!(Test-Path $repoDirectory)) {
     $null = New-Item -ItemType Directory -Force -Path $repoDirectory
 }

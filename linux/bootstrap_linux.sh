@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Installs in $HOME/src/bootstrap-os
-# curl -sk https://raw.githubusercontent.com/geekzter/bootstrap-os/master/linux/bootstrap_linux.sh | bash
+# curl -sk https://raw.githubusercontent.com/asyrjasalo/bootstrap-os/master/linux/bootstrap_linux.sh | bash
 
 SCRIPT_PATH=`dirname $0`
 
@@ -51,7 +51,7 @@ if [ ! -d $HOME/src ]; then
 fi
 if [ ! -d $HOME/src/bootstrap-os ]; then
     echo "Repository does not exist, creating at $HOME/src/bootstrap-os..."
-    git clone -q https://github.com/geekzter/bootstrap-os $HOME/src/bootstrap-os
+    git clone -q https://github.com/asyrjasalo/bootstrap-os $HOME/src/bootstrap-os
 else 
     echo "Repository found at $(cd $HOME/src/bootstrap-os && pwd), updating..."
     git config --global pull.rebase false

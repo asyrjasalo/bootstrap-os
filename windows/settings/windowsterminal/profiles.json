@@ -140,11 +140,11 @@
                 "fontSize": 9,
                 "guid": "{7bb542a2-6076-46f9-a55e-3ba2f5b792fb}",
                 "historySize": 9001,
-                "icon": "%USERPROFILE%\\Source\\GitHub\\geekzter\\bootstrap-os\\common\\icons\\GitHub-Mark-64px.png",
+                "icon": "%USERPROFILE%\\Source\\GitHub\\asyrjasalo\\bootstrap-os\\common\\icons\\GitHub-Mark-64px.png",
                 "name": "GitHub",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%\\Source\\GitHub\\geekzter",
+                "startingDirectory": "%USERPROFILE%\\Source\\GitHub\\asyrjasalo",
                 "useAcrylic": false
             }
         ]
