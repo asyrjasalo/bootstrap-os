@@ -130,7 +130,7 @@ if ($All -or $minimal) {
 
         # Windows capabilities
         $capabilities  = Get-WindowsCapability -Online -Name "Language.*en-US*" | Where-Object {$_.State -ne "Installed"}
-        $capabilities += Get-WindowsCapability -Online -Name "Language.*nl-NL*" | Where-Object {$_.State -ne "Installed"}
+        $capabilities += Get-WindowsCapability -Online -Name "Language.*fi-FI*" | Where-Object {$_.State -ne "Installed"}
         $capabilities += Get-WindowsCapability -Online -Name OpenSSH.Client     | Where-Object {$_.State -ne "Installed"}
         foreach ($capability in $capabilities) {
             if ($capability -and $capability.Name) {
