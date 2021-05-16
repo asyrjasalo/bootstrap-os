@@ -5,7 +5,6 @@ gnupg
 lsb-release
 wget
 azure-cli
-azure-functions-core-tools
 blobfuse
 coreutils
 dnsutils
@@ -24,7 +23,6 @@ msodbcsql17
 mssql-tools
 nano
 nmap
-node-typescript
 powershell
 sed
 snapd
