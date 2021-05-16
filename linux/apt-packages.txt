@@ -4,7 +4,6 @@ curl
 gnupg
 lsb-release
 wget
-ansible
 azure-cli
 azure-functions-core-tools
 blobfuse
@@ -12,9 +11,7 @@ coreutils
 dnsutils
 docker
 dos2unix
-dotnet-sdk-3.1
 findutils
-fish
 fuse
 gh
 git
@@ -23,7 +20,6 @@ jq
 kubectl
 less
 man
-mc
 msodbcsql17
 mssql-tools
 nano
